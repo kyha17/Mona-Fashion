@@ -1,0 +1,108 @@
+ul.pagination {
+    justify-content: end;
+    display: flex;
+    margin-right: 20px;
+}
+
+.dropzone {
+    border: 2px dashed #007bff;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dropzone .dz-message {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+    background: #28a745;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+ .select2-container .select2-selection--single {
+    height: 100%;
+    padding: 0.625rem;
+    font-size: 14px;
+    border-width: 1px;
+    border-color: rgb(209 213 219);
+    background-color: rgb(249 250 251);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: rgba(17, 24, 39/ 1);
+    line-height: 20px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.select2-container--default .select2-selection--multiple{
+
+    margin: 0;
+    border-width: 1px !important;
+    border-radius: 0.5rem;
+}
+
+.select2-container .select2-search--inline .select2-search__field{
+    margin: 0;
+}
+
+
+.loader-dots div {
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loader-dots div:nth-child(1) {
+    left: 8px;
+    animation: loader-dots1 0.6s infinite;
+}
+.loader-dots div:nth-child(2) {
+    left: 8px;
+    animation: loader-dots2 0.6s infinite;
+}
+.loader-dots div:nth-child(3) {
+    left: 32px;
+    animation: loader-dots2 0.6s infinite;
+}
+.loader-dots div:nth-child(4) {
+    left: 56px;
+    animation: loader-dots3 0.6s infinite;
+}
+@keyframes loader-dots1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes loader-dots3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes loader-dots2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
