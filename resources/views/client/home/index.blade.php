@@ -31,7 +31,7 @@
         @include('client.home.main')
 
         <!-- Info -->
-        <section class="py-5">
+        <section class="py-5" id="contact">
           <div class="container max-w-[1170px] mx-auto   items-center h-full px-2.5 pb-6">
             <div class="mb-6">
               <div class="uppercase text-center font-bold text-[30px] mb-2">Về Mona Fashion</div>

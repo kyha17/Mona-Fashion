@@ -114,6 +114,37 @@ class RoleService
         }
     }
 
+    public function update($request,$role){
+
+        
+        try{
+            $request->validate([
+                'name' => 'required|unique:permissions,name,'.$role->id,
+            ]);
+
+            $dataInsert = $role->update([
+                'name' => $request->input('name'),
+            ]);
+
+            if ($dataInsert) {
+                $role->syncPermissions($request->permission);
+                // NOTE - Thông báo
+                flash()->success('Cập nhật vai trò thành công!');
+                // Chuyển hướng trang
+                return redirect()->route('account_module.role.index');
+            } else {
+                // Thông báo thất bại
+                flash()->error('Cập nhật thất bại! Vui lòng đợi trong ít phút');
+                // Chuyển hướng trang
+                return redirect()->back();
+            }
+        } catch (\Exception $e) {
+            // Thông báo lỗi xử lý
+            flash()->error($e->getMessage());
+            return redirect()->back();
+        }
+    }
+
     //NOTE - Xóa tất cả dữ liệu được chọn
     public function deleteAll($request)
     {

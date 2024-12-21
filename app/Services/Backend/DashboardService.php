@@ -186,7 +186,7 @@ class DashboardService
 
 
         $chart = (new LarapexChart)->setType('area')
-            ->setTitle('Thống kê sản phẩm thêm thêm và đã bán')
+            ->setTitle('Thống kê sản phẩm thêm và đã bán')
             ->setSubtitle('Trong vòng 12 tháng')
             ->setXAxis($result->pluck('month')->toArray())
             ->setDataset([

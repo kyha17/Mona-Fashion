@@ -1,5 +1,5 @@
 <x-app-layout>
-    @section('title', config('apps.groupProduct.updateCreate'))
+    @section('title', config('apps.groupProduct.titleUpdate'))
     <div class="p-4 max-h-full block sm:flex items-center justify-between   dark:bg-gray-800 ">
         <div class="w-full mb-1">
             <div class="mb-4">

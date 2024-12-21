@@ -30,7 +30,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Http\Controllers\Backend\OrderController as BackendOrderController;
 use App\Http\Controllers\Client\ProfileController as ClientProfileController;
 
-Route::prefix('admin')->middleware(['auth', 'verified', 'is_admin'])->group(function () {
+Route::prefix('admin')->middleware(['auth','is_admin'])->group(function () {
     //ANCHOR - [Ecommerce Modules]
     Route::name('dashboard_module.')->group(function () {
 
@@ -66,6 +66,7 @@ Route::prefix('admin')->middleware(['auth', 'verified', 'is_admin'])->group(func
             Route::get('/create', [RoleController::class, 'create'])->name('create');
             Route::post('/store', [RoleController::class, 'store'])->name('store');
             Route::get('/edit/{role}', [RoleController::class, 'edit'])->name('edit');
+            Route::post('/update/{role}', [RoleController::class, 'update'])->name('update');
             Route::delete('/deleteRow', [RoleController::class, 'deleteRow'])->name('deleteRow');
             Route::delete('/deleteAll', [RoleController::class, 'deleteAll'])->name('deleteAll');
         });
@@ -282,8 +283,20 @@ Route::post('/order',[OrderController::class,'order'])->name('order');
 
 Route::get('/gioi-thieu', [AboutPageController::class, 'index'])->name('aboutPage');
 
-Route::get('/thank', function () {
-    return view('client.page.thank');
+Route::get('/thank', function (Request $request) {
+    // Lấy tham số 'vnp_ResponseCode' từ URL
+    $responseCode = $request->input('vnp_ResponseCode');
+
+    if ($responseCode == '00') {
+        // Giao dịch thành công
+        return view('client.page.thank')->with('message', 'Thanh toán thành công.');
+    } elseif ($responseCode == '24') {
+        // Người dùng hủy thanh toán
+        return redirect('/');
+    } else {
+        // Các trường hợp khác (thất bại, lỗi, v.v.)
+        return redirect('/');
+    }
 });
 
 

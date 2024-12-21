@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'titleLabel' => "Role & Permission",
-    'titleIndex' => "Role & Permission",
-    'titleCreate' => "Role & Permission",
-    'titleUpdate' => "Role & Permission",
+    'titleLabel' => "Phân quyền",
+    'titleIndex' => "Phân quyền",
+    'titleCreate' => "Thêm phân quyền",
+    'titleUpdate' => "Sửa phân quyền",
 ];

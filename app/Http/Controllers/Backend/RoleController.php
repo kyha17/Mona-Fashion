@@ -42,6 +42,10 @@ class RoleController extends Controller
         return view('backend.roles.edit', compact(['getPermission','role']));
     }
 
+    public function update(Request $request,Role $role){
+        return $this->service->update($request,$role);
+    }
+
     public function deleteRow(Request $request){
         return $this->service->deleteRow($request);
     }

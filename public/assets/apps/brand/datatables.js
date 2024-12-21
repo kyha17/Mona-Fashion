@@ -184,6 +184,8 @@ let deleteAll = function(url, dataTableIndex, ) {
 
         // Tắt màn hình loading
         dataTableIndex.processing(true);
+
+        
         Swal.fire(
             swalConfig2ButtonConfirm("Bạn có chắc chắn muốn xóa tài khoản này?")
         ).then(function(result) {

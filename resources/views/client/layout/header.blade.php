@@ -106,7 +106,7 @@
                                     </div>
                                 </li>
                                 <li class="border-solid lg:px-2.5 lg:mx-[7px]  last:ml-0 menu-list">
-                                    <a href="{{ route('index') }}"
+                                    <a href="{{ route('index') }}#contact"
                                         class="leading-4 px-5 py-[15px] inline-flex w-full text-[#666666] text-[.8em]  font-bold tracking-wider uppercase lg:hover:text-[#ff5b26] lg:text-[.9em] lg:hover:ease-in lg:p-0 lg:py-2.5">Liên
                                         hệ</a>
                                 </li>

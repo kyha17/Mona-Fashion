@@ -173,11 +173,11 @@
 
             </div>
 
-            {{-- Gmail --}}
+            {{-- Phan trang --}}
             <div class="grid grid-cols-12 mt-4">
                 <div class="col-span-4 ">
                     <div class="my-0 m-4">
-                        <h5 class="mb-1 text-lg font-bold tracking-tight text-green-900 dark:text-white">Email
+                        <h5 class="mb-1 text-lg font-bold tracking-tight text-green-900 dark:text-white">Phân trang
                         </h5>
                         <p class="mb-3 text-xs text-green-700">Dưới đây là thông tin phân trang
                     </div>

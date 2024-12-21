@@ -1,5 +1,5 @@
 <x-app-layout>
-    @section('title', config('apps.role.titleCreate'))
+    @section('title', config('apps.role.titleUpdate'))
     <div class="p-4 max-h-full block sm:flex items-center justify-between    ">
         <div class="w-full mb-1">
             <div class="mb-4">
@@ -15,7 +15,7 @@
 
     </div>
     <div>
-        <form method="POST" action="{{ route('account_module.role.store') }}">
+        <form method="POST" action="{{ route('account_module.role.update',$role) }}">
             @csrf
             <div class="grid grid-cols-12 ">
                 <div class="col-span-4 ">

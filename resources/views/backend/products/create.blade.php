@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="col-span-6 sm:col-span-2 ">
-                    <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Thêm mới thộc tính</h3>
+                    <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Thêm mới thuộc tính</h3>
                     <label class="inline-flex items-center me-5 cursor-pointer mb-3">
                         <input type="checkbox" name="turnOnVariant" class="sr-only peer turnOnVariant"
                             @checked(old('turnOnVariant') == 'on')>

@@ -35,3 +35,8 @@
      </div>
 
  </section>
+ @push('js')
+ <script>
+     swiper('.slideBanner')
+ </script>
+@endpush

@@ -29,7 +29,7 @@
                 <li>
                     <a href="{{ route('dashboard_module.dashboard.index') }}"
                         class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700 {{ request()->routeIs('dashboard_module.dashboard*') ? 'bg-gray-100 dark:bg-gray-700' : '' }}">
-                        Dashboard
+                        Thống kê
                     </a>
                 </li>
 
@@ -64,7 +64,7 @@
                 <li>
                     <a href="{{ route('account_module.user.index') }}"
                         class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700 {{ request()->routeIs('account_module.user*') ? 'bg-gray-100 dark:bg-gray-700' : '' }}">
-                        Admin
+                        Quản lý tài khoản
                     </a>
                 </li>
             @endcan
@@ -181,7 +181,7 @@
             @can('Quản lý đơn hàng')
                 <li>
                     <a href="{{ route('ecommerce_module.order.index') }}"
-                        class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700 {{ request()->routeIs('ecommerce_module.banner*') ? 'bg-gray-100 dark:bg-gray-700' : '' }}">
+                        class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700 {{ request()->routeIs('ecommerce_module.order*') ? 'bg-gray-100 dark:bg-gray-700' : '' }}">
                         Quản lý đơn hàng
                     </a>
                 </li>

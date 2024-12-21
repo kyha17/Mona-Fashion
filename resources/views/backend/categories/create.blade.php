@@ -1,9 +1,9 @@
 <x-app-layout>
-    @section('title', config('apps.user.titleCreate'))
+    @section('title', config('apps.categories.titleCreate'))
     <div class="p-4 max-h-full block sm:flex items-center justify-between   dark:bg-gray-800 ">
         <div class="w-full mb-1">
             <div class="mb-4">
-                {{ Breadcrumbs::render('userCreate') }}
+                {{ Breadcrumbs::render('categoriesCreate') }}
                 <div class="flex items-center content-center">
                     <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white mr-2 ">@yield('title')
                     </h1>

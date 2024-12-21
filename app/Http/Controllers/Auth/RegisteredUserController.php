@@ -43,10 +43,6 @@ class RegisteredUserController extends Controller
             'is_admin' => 1,
         ]);
 
-        if($user){
-            $user->assignRole('Admin');
-        }
-
 
         event(new Registered($user));
 

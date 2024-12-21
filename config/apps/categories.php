@@ -2,9 +2,9 @@
 
 return [
     'titleLabel' => "Quản lý danh mục",
-    'titleIndex' => "Quản lý tài khoản danh mục",
-    'titleCreate' => "Thêm mới tài khoản danh mục",
-    'titleUpdate' => "Cập nhật tài khoản danh mục",
+    'titleIndex' => "Quản lý danh mục",
+    'titleCreate' => "Thêm mới danh mục",
+    'titleUpdate' => "Cập nhật danh mục",
 
     'notifyCreate' => "Chúc mừng! Bạn đã thêm mới thành công!",
     'notifyUpdate' => "Chúc mừng! Bạn đã cập nhật thành công!",

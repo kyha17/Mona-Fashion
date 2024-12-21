@@ -1,5 +1,5 @@
 <x-app-layout>
-    @section('title', config('apps.label.titleCreate'))
+    @section('title', config('apps.policy.titleCreate'))
     <div class="p-4 max-h-full block sm:flex items-center justify-between   dark:bg-gray-800 ">
         <div class="w-full mb-1">
             <div class="mb-4">

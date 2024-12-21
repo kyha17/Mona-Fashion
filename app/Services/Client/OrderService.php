@@ -249,6 +249,14 @@ class OrderService
 
             }
 
+            if ($getVoucher) {
+                // Gắn voucher vào đơn hàng
+                $dataInsertOrder->voucher()->attach($getVoucher->id, ['user_id' => Auth::id()]);
+                
+                // Tăng giá trị cột 'unlimited'
+                $getVoucher->increment('unlimited');
+            }
+
             session()->forget('cart');
 
             return response()->json([
