@@ -172,7 +172,7 @@ let deleteRow = function(url, dataTableIndex, ) {
         // Tắt màn hình loading
         showLoading();
         Swal.fire(
-            swalConfig2ButtonConfirm("Bạn có chắc chắn muốn xóa tài khoả này?")
+            swalConfig2ButtonConfirm("Bạn có chắc chắn muốn xóa hỗ trợ liên hệ này?")
         ).then(function(result) {
 
             if (result.isConfirmed) {

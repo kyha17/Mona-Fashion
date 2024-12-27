@@ -77,12 +77,12 @@
                                             @foreach ($attr['children'] as $element)
                                                 @if (str_starts_with($element['value'], '#'))
                                                     <div class="block">
-                                                        <div data-name={{$element['name'] }} data-id="{{ $element['id'] }}"
+                                                        <div data-name="{{$element['name'] }}" data-id="{{ $element['id'] }}"
                                                             class="attribute-style cursor-pointer border-solid w-10 h-10 border-[1px] mr-2 border-[{{ $element['value'] }}] bg-[{{ $element['value'] }}] rounded-lg shadow-[0_2px_3px_0_rgba(0,0,0,.15)]">
                                                         </div>
                                                     </div>
                                                 @else
-                                                    <span data-name={{$element['name'] }} data-id="{{ $element['id'] }}"
+                                                    <span data-name="{{$element['name'] }}" data-id="{{ $element['id'] }}"
                                                         class="attribute-style flex items-center justify-center uppercase border-solid w-10 h-10 border-[1px] mr-2 border-[#b7b7b7] cursor-pointer rounded-lg shadow-[0_2px_3px_0_rgba(0,0,0,.15)]">{{ $element['name'] }}</span>
                                                 @endif
                                             @endforeach

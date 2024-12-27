@@ -186,7 +186,7 @@ let deleteAll = function(url, dataTableIndex, ) {
         // Tắt màn hình loading
         hidenLoading();
         Swal.fire(
-            swalConfig2ButtonConfirm("Bạn có chắc chắn muốn xóa tài khoản này?")
+            swalConfig2ButtonConfirm("Bạn có chắc chắn muốn xóa sản phẩm này?")
         ).then(function(result) {
 
             if (result.isConfirmed) {
@@ -242,7 +242,7 @@ let deleteRow = function(url, dataTableIndex, ) {
         // Tắt màn hình loading
         dataTableIndex.processing(true);
         Swal.fire(
-            swalConfig2ButtonConfirm("Bạn có chắc chắn muốn xóa tài khoản này?")
+            swalConfig2ButtonConfirm("Bạn có chắc chắn muốn xóa sản phẩm này?")
         ).then(function(result) {
 
             if (result.isConfirmed) {
